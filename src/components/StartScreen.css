@@ -1,0 +1,81 @@
+
+.start{
+    
+   padding-top: 15%;
+   
+    
+}
+
+.start h1{
+    color: #4FE3DF;
+    font-family: 'Aboreto', cursive;
+    font-size: 3.5rem;
+    text-shadow: 0 3px 3px #000000;
+    margin-bottom: 3.5rem;
+    cursor: default;
+}
+
+
+
+.start span{
+    color: #EBCB17;
+}
+
+.start p{
+    margin-bottom: 2rem;
+    color: #4FE3DF;
+    
+    display: grid;
+   
+}
+
+.start i{
+    color: #EBCB17;
+    font-size: 2rem;
+    margin-bottom: -20px;
+    animation: go-down 1s infinite alternate;
+}
+
+@keyframes go-down {
+    from{
+        transform: translateY(10px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+button{
+    background:rgb(48, 48, 48);
+    color: #ffffff;
+    padding: 0.7rem;
+    border: 2px solid #FAF034;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .4s ;
+    box-shadow: 0 .1rem .15rem #FAF034;
+    animation: change-color 1s infinite alternate;
+}
+
+@keyframes change-color{
+    from{
+        border: 2px solid #FAF034;
+        box-shadow: 0 .1rem .15rem #FAF034;
+    }
+
+    to{
+        border: 1px solid #4FE3DF;
+        box-shadow: 0 .1rem .15rem #4FE3DF;
+    }
+}
+
+button:hover{
+    background: rgb(37, 37, 37);
+    color: white;
+    border: 1px solid #4FE3DF;
+    box-shadow: 0 .1rem .15rem #4FE3DF;
+    animation: none;
+}

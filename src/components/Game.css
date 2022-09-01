@@ -1,0 +1,137 @@
+.game h1:first-child{
+    color: #4FE3DF;
+    font-family: 'Aboreto', cursive;
+    font-size: 3.5rem;
+    text-shadow: 0 3px 3px #000000;
+    margin-bottom: 1rem;
+}
+
+.game h1:first-child span{
+    color: #EBCB17;
+}
+
+.game .subtitle{
+    font-family: 'Aboreto', cursive;
+    color: #EBCB17;
+    text-transform: uppercase;
+}
+
+.points span{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(146, 0, 0);
+    text-shadow: 0 1px #303030;
+    animation: pointer-change 1s infinite alternate;
+    
+}
+
+@keyframes pointer-change {
+    from{
+        
+    }
+    to{ 
+        color: red;
+        text-shadow: 0px 1px  rgb(255, 255, 255);
+    }
+}
+
+.tip{
+    color: #2FE5EB;
+}
+
+.tip span{
+    color: #FAF034;
+    text-transform: uppercase;
+}
+
+.wordContainer{
+    max-width: 900px;
+    margin: auto;
+    padding: 1.5rem;
+    background: #000000;
+    border: 3px solid #2FE5EB;
+    border-radius: 15px;
+    box-shadow: 0 .5rem .1rem #2FE5EB;
+    display: flex;
+    justify-content: center;
+}
+
+.wordContainer img{
+    position: relative;
+    width:15%;
+}
+
+.letter, .blanksquare{
+    margin: 3px;
+    font-size: 70px;
+    line-height: 1.5;
+    border: 2px solid #2FE5EB;
+    border-radius: 1px;
+    height: 100px;
+    width: 100px;
+    text-transform: uppercase;
+    background-color: #2FE5EB;
+    font-weight: bold;
+}
+
+.letterContainer p{
+    margin-bottom: 1.2em;
+}
+
+.letterContainer form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.letterContainer input{
+    height: 50px;
+    width: 50px;
+    font-size: 2em;
+    text-align: center;
+    background-color:#FAF034 ;
+    color: black;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.letterContainer input:focus{
+    outline: none;
+}
+
+.letterContainer button{
+    background-color: #2FE5EB;
+    color: black;
+    font-weight: bold;
+    animation: none;
+    border: none;
+}
+
+.letterContainer button:hover{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    animation: none;
+    border: none;
+}
+
+
+.btn-end{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: black;
+    font-weight: bold;
+    border: 1px solid red;
+    box-shadow: 0 .1rem .15rem red;
+    background-color: white;
+    animation: none;
+}
+
+.btn-end:hover{
+    border: 1px solid red;
+    box-shadow: 0 .1rem .15rem #d80e0e;
+}
