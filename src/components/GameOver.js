@@ -1,8 +1,9 @@
 import React from 'react'
+import './GameOver.css'
 
 const GameOver = ({retry, score}) => {
   return (
-    <div>
+    <div className="endgame">
         <h1>Obrigado por Jogar!</h1>
         <h2>
           A sua pontuação foi: <span>{score}</span>

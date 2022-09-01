@@ -4,6 +4,7 @@ import './App.css';
 import {useCallback, useEffect, useState} from "react"
 
 import { wordsList } from "./data/words"
+import NavItems from './components/NavItems';
 
 import StartScreen from './components/StartScreen';
 import Game from './components/Game';
@@ -118,6 +119,7 @@ function App() {
 
   return (
     <div className="App">
+        <NavItems/>
        {gameStage === "start" && <StartScreen startGame={startGame}/>}
        {gameStage === "game" && <Game 
         verifyLetter={verifyLetter} 

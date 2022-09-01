@@ -1,0 +1,23 @@
+
+.navbar{
+    display: flex;
+    margin-bottom: -60px;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.navbar ul{
+    display: flex;
+    
+}
+
+.navbar ul li{
+   font-size: 1.3rem;
+   margin: 10px;
+   list-style: none;
+   
+
+
+}
+
+

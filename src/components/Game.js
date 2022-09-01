@@ -31,7 +31,7 @@ const Game = ({
         </p>
         <h1 className="subtitle">Advinhe a palavra</h1>
         <p className="tip">Dica sobre a palavra: <span>{pickedCategory}</span></p>
-        <p>Você ainda tem {guesses} tentativa(s)</p>
+        
         <div className="wordContainer">
             {letters.map((letters, i) => (
                 guessedLetters.includes(letters) ? (
@@ -43,7 +43,8 @@ const Game = ({
         </div>
 
         <div className="letterContainer">
-            <p>Tente advinhar uma letra da palavra</p>
+        <p>Você ainda tem {guesses} tentativa(s)</p>
+            
             <form onSubmit={handleSubmit} >
                 <input type="text" name="letter" maxLength="1" required onChange={
                     (e) => setLetter(e.target.value)
